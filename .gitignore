@@ -1,0 +1,11 @@
+# Image outputs.
+*.eps
+*.png
+*.jpg
+
+# LaTeX outputs.
+*.pdf
+*.out
+*.aux
+*.log
+*.bib
