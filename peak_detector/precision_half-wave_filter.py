@@ -23,7 +23,7 @@ d.add(e.LINE, d='up', l=d.unit/3)
 d.add(e.LINE, d='right', tox=(diode_positive_dot.center)) 
 diode_negative_dot = d.add(e.DOT, toplabel='$V_{diode-}$')
 d.push()
-d.add(e.GAP_LABEL, d='down', toy=diode_positive_dot.center, label='$U_{diode \; bias}$')
+d.add(e.GAP_LABEL, d='down', toy=diode_positive_dot.center, toplabel='$U_{diode \; bias}$')
 d.pop()
 d.add(e.LINE, d='right', tox=(out_dot_1.center + [short_length_2, 0]))
 d.add(e.LINE, d='down', toy=out_dot_1.center)
@@ -42,3 +42,4 @@ out_current_label = out_current_arrow.add_label('$I_{out}$', loc='bot', align=('
 
 # Preview the whole plot.
 d.draw()
+d.save( 'precision_half-wave_filter.png' )
